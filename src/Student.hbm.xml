@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.roshnee.bean.Student" table="students">
+        <id name="studentId" type="int" column="id">
+            <generator class="increment" />
+        </id>
+        <property name="ssn">
+            <column name="ssn" />
+        </property>
+        <property name="firstName">
+            <column name="firstName" />
+        </property>
+        <property name="lastName">
+            <column name="lastName" />
+        </property>
+        <property name="gender">
+            <column name="gender" />
+        </property>
+        <property name="phoneNumber">
+        	<column name="phoneNumber"></column>
+        </property>
+        <property name="dateOfBirth">
+        	<column name = "dateOfBirth"></column>
+        </property>
+        <property name="momName">
+        	<column name = "momName"></column>
+        </property>
+        <property name = "dadName">
+        	<column name = "dadName"></column>
+        </property>
+    </class>
+</hibernate-mapping>
