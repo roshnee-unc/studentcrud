@@ -1,2 +1,5 @@
 data/
 db/InsertStudentRecords.sql
+bin/Hibernate.cfg.xml
+config/db.properties
+src/Hibernate.cfg.xml
